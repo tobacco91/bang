@@ -67,7 +67,7 @@ Page({
         },
         {
           name: '失物招领',
-          url: '',
+          url: '../lose/index/index',
           img: `${imgPrefix}/index_icon_-lose.png`
         }
       ],

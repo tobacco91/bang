@@ -23,7 +23,8 @@
     "pages/activity/index/index",
     "pages/activity/apply/apply",
     "pages/activity/detail/detail",
-    "pages/activity/info/info"
+    "pages/activity/info/info",
+    "pages/lose/index/index"
     // Dont remove this comment
   ],
   "window": {

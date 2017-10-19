@@ -1,0 +1,118 @@
+
+@img_url: '../image';
+.container {
+  display: block;
+  .edit {
+    position: fixed;
+    background-image: url('@{img_url}/edit.png');
+    bottom: 43rpx;
+    right: 43rpx;
+    width: 176rpx;
+    height: 176rpx;
+    background-size: cover;
+  }
+}
+.header {
+  background-color: #ffffff;
+  height: 158rpx;
+  box-shadow: 0 1rpx 0 0 #eaeaea;
+  &--nav {
+    height: 98rpx;
+    font-size: 32rpx;
+    text:first-of-type {
+      color: #000000;
+      margin-left: 202rpx;
+      margin-right: 98rpx;
+    }
+    text:nth-of-type(2) {
+      color: #bebaba;
+      margin-right: 202rpx; 
+    }
+  }
+  &--detail {
+    padding-bottom: 30rpx;
+    height: 30rpx;
+    white-space: nowrap;
+    font-size: 28rpx;
+    color:  #bebaba;
+    text {
+      margin-right: 85rpx;
+    }
+    text:first-of-type {
+      color: #000000;
+      margin-left: 29rpx;
+    }
+    text:last-of-type {
+      margin-right: 29rpx;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+    display: none;
+  }
+}
+.main {
+  overflow: scroll;
+  background-color: #fbfbfb;
+  &--block {
+    border-radius: 10rpx;
+    box-shadow: -4rpx 0 10rpx #f2f5fb,4rpx 0 10rpx #f2f5fb,0 4rpx 10rpx #f2f5fb,0 -4rpx 10rpx #f2f5fb;
+    margin: 20rpx auto;
+    background-color: #ffffff;
+    width: 691rpx;
+    height: 266rpx;
+    overflow: hidden;
+  }
+  &--header {
+    height: 85rpx;
+    margin: 31rpx 21rpx 0 31rpx;
+  }
+  &--img {
+    background-image: url('@{img_url}/head.png');
+    background-size: cover;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 85rpx;
+    height: 85rpx;
+  }
+  &--nav {
+    margin: -85rpx 0 0 104rpx;
+  }
+  &--title {
+    font-size: 32rpx;
+    color: #000000;
+  }
+  &--date {
+    font-size: 24rpx;
+    float: right;
+    color: #4886ff;
+  }
+  &--name {
+    margin-left: 104rpx;
+    &--img {
+      background-image: url('@{img_url}/img_figure.png');
+      background-size:cover;
+      width: 22rpx;
+      height: 31rpx;
+      margin-right: 10rpx;
+      float: left;
+    }
+    text {
+      font-size: 24rpx;
+      color: #bebaba;
+      float: left;
+      margin-top: 2rpx;
+    }
+  }
+  &--content {
+    height: 100rpx;
+    overflow: hidden;
+    margin: 20rpx 31rpx 35rpx;
+    font-size: 30rpx;
+    color: #a9a9a9;
+  }
+}
